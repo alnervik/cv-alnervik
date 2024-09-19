@@ -30,3 +30,33 @@ body {
     justify-content: center;
     padding-bottom: 50px;
 }
+
+.main-content {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.picture, .profile {
+    flex: 1;
+}
+
+/* Gör så vid skärmar mindre än 770px bred blir div:sen i vertkal kolumn istället */
+@media (max-width: 770px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .picture, .profile {
+        width: 100%;
+    }
+
+    .picture img {
+        max-width: 100%;
+        height: auto;
+    }
+}
