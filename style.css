@@ -6,7 +6,7 @@
 
 body {
     margin: 0;
-    font-family: 'Roboto';
+    font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -14,4 +14,19 @@ body {
 
 .top-section {
     background-color: #F8F8F8;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    font-size: xx-large;
+    letter-spacing: .6rem;
+    font-weight: 450;
+}
+
+.sub-text {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
 }
