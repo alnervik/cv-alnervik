@@ -15,6 +15,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .header {
@@ -29,12 +30,21 @@ body {
 .header-text {
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
+}
+
+.light-mode {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: larger;
+    cursor: pointer;
 }
 
 .main {
     background-color: #F8F8F8;
     width: 100%;
+    transition: background-color 0.3s;
 }
 
 .main-content {
@@ -144,6 +154,20 @@ body {
 .fa-brands {
     font-size: xx-large;
     padding-left: 10px;
+}
+
+/*Dark mode färgläggning */
+body.dark-mode {
+    background-color: #0d1117;
+    color: #ffffff;
+}
+
+body.dark-mode .main {
+    background-color: #010409;
+}
+
+body.dark-mode .work-details {
+    border-left-color: #ffffff;
 }
 
 /*Olika regler för att få sidan fungera bättre vid mindre skärmar */
