@@ -5,7 +5,7 @@ function toggleTheme() {
     
     body.classList.toggle('dark-mode');
     
-    // Ändra ikonen när användare byter färg-läge
+    // Ändrar ikonen när användare byter färg-läge
     if (body.classList.contains('dark-mode')) {
         themeIcon.classList.remove('fa-moon');
         themeIcon.classList.add('fa-sun');
@@ -17,7 +17,7 @@ function toggleTheme() {
     }
 }
 
-// Lägg till en eventlyssnare på light-mode-elementet
+// Lägger till en eventlyssnare på light-mode-elementet
 document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.querySelector('.light-mode');
     themeToggle.addEventListener('click', toggleTheme);
