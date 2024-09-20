@@ -47,7 +47,7 @@ body {
     display: flex;
     justify-content: flex-start;
     width: 100%;
-    max-width: 1200px; /* Added to match main-content */
+    max-width: 1200px; 
     padding: 20px;
     padding-top: 50px;
 }
@@ -90,20 +90,36 @@ body {
 
 .workexp-list {
     display: flex;
-    max-width: 200px;
-    margin: 20px 0; /* Changed from margin: 20px auto; */
+    max-width: 250px;
+    margin: 20px 0;
     padding: 20px;
+}
+
+.workexp-content {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
 }
 
 .work-years {
     flex: 0 0 100px;
     font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .work-details {
     flex: 1;
     border-left: 2px solid #333;
     padding-left: 20px;
+}
+
+.work-details .place {
+    margin-top: 0;
+    margin-bottom: 5px;
 }
 
 @media (max-width: 770px) {
