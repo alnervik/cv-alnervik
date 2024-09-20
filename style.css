@@ -170,6 +170,8 @@ body.dark-mode .work-details {
     border-left-color: #ffffff;
 }
 
+
+
 /*Olika regler för att få sidan fungera bättre vid mindre skärmar */
 @media (max-width: 770px) {
     .main-content, .sub-content {
