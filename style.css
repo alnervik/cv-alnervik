@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+a, a:link, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -130,11 +135,15 @@ body {
 }
 
 .bottom-section {
-    background-color: #F8F8F8;
     display: flex;
     justify-content: center;
-    padding-top: 25;
-    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.fa-brands {
+    font-size: xx-large;
+    padding-left: 10px;
 }
 
 /*Olika regler för att få sidan fungera bättre vid mindre skärmar */
