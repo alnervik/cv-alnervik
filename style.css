@@ -21,7 +21,7 @@ body {
     font-weight: 450;
 }
 
-.sub-text {
+.header-text {
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
@@ -78,6 +78,13 @@ body {
     font-weight: 450;
 }
 
+#heading-work {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: xx-large;
+    font-weight: 450;
+}
+
 .heading-education {
     margin-bottom: 0;
     font-size: large;
@@ -91,7 +98,7 @@ body {
 .workexp-list {
     display: flex;
     max-width: 250px;
-    margin: 20px 0;
+    margin: 0;
     padding: 20px;
 }
 
@@ -122,6 +129,15 @@ body {
     margin-bottom: 5px;
 }
 
+.bottom-section {
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: center;
+    padding-top: 25;
+    padding-bottom: 25px;
+}
+
+/*Olika regler för att få sidan fungera bättre vid mindre skärmar */
 @media (max-width: 770px) {
     .main-content, .sub-content {
         flex-direction: column;
@@ -140,6 +156,21 @@ body {
 
     .heading-content {
         font-size: x-large;
+    }
+
+    #heading-work {
+        font-size: x-large;
+    }
+
+    .workexp-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .workexp-list {
+        max-width: 100%;
+        margin: 10px 0;
+        padding: 10px;
     }
 }
 
